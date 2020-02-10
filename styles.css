@@ -1,0 +1,31 @@
+#box-section{
+  margin: 30px;
+  width: 960px;
+  height: 960px;
+  background: pink;
+  display:grid;
+
+  
+}
+
+.littleOnes{
+  background: lime;
+  border: 1px solid black;
+  /*grid-template-columns: (16,1fr);
+  grid-template-columns: auto;
+  grid-auto-columns: minmax(10px,auto);
+  grid-template-rows: repeat(3,1fr);*/
+}
+
+.form-section{
+	display: grid;
+}
+
+.my-form{
+	justify-self: center;
+}
+
+body > h1{
+	text-align: center;
+}
+
