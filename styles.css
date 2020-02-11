@@ -4,9 +4,12 @@
   height: 960px;
   background: pink;
   display:grid;
-  Justify-items: center;
-
   
+}
+
+.wrapper{
+  display:grid;
+  justify-items: center;
 }
 
 .littleOnes{
