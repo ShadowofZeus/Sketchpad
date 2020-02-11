@@ -7,10 +7,6 @@
   
 }
 
-.wrapper{
-  display:grid;
-  justify-items: center;
-}
 
 .littleOnes{
   background: lime;
