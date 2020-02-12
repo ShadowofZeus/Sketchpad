@@ -1,6 +1,9 @@
+
 let form = document.querySelector('form');
 let littleDiv = document.getElementsByClassName('littleOnes');
 let resetbtn = document.getElementById('reset');
+gridArea=document.getElementById('box-section');
+//let mix = gridArea.querySelectorAll('div.littleOnes');
 
 function createMyGrid(colNmbr)
 {
@@ -10,7 +13,7 @@ function createMyGrid(colNmbr)
 
 	for(i=0;i<Math.pow(colNmbr,2);i++)
 	{
-		console.log(i,gridArea);
+		//console.log(i,gridArea);
 		gridArea.appendChild(document.createElement('div')).classList.add('littleOnes');
 	}
 
@@ -37,7 +40,7 @@ document.querySelector("#box-section").addEventListener("mouseover", function( e
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);  
   // highlight the mouseover target
-  console.log(event.target);
+  //console.log(event.target);
   event.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
   event.stopPropagation();
 
