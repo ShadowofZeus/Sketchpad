@@ -1,5 +1,6 @@
 let form = document.querySelector('form');
 let littleDiv = document.getElementsByClassName('littleOnes');
+let resetbtn = document.getElementById('reset');
 
 function createMyGrid(colNmbr)
 {
@@ -17,6 +18,12 @@ function createMyGrid(colNmbr)
     gridArea.style.gridTemplateRows = `repeat(${colNmbr}, 1fr)`
 }
 
+function clearGrid()
+{
+	//console.log('hi')
+	window.location.reload();
+}
+
 form.addEventListener('submit', e => {
 	rows = Number(document.getElementById('numberBoxes').value);
 	//console.log(rows);
@@ -30,14 +37,19 @@ document.querySelector("#box-section").addEventListener("mouseover", function( e
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);  
   // highlight the mouseover target
+  console.log(event.target);
   event.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-  //console.log(event.target);
+  event.stopPropagation();
 
  
-  // reset the color after a short delay
+  /*reset the color after a short delay
   setTimeout(function() {
     event.target.style.background = "";
   }, 8000);
-}, false);
+}, false);*/
+});
+
+resetbtn.addEventListener('click', clearGrid);
+
 
 
