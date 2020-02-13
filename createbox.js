@@ -1,10 +1,4 @@
 
-let form = document.querySelector('form');
-let littleDiv = document.getElementsByClassName('littleOnes');
-let resetbtn = document.getElementById('reset');
-gridArea=document.getElementById('box-section');
-//let mix = gridArea.querySelectorAll('div.littleOnes');
-
 function createMyGrid(colNmbr)
 {
 	gridArea=document.getElementById('box-section');
@@ -23,13 +17,14 @@ function createMyGrid(colNmbr)
 
 function clearGrid()
 {
-	//console.log('hi')
-	window.location.reload();
+	let gridArea=document.getElementById('box-section');
+	gridArea.textContent="";
+
 }
 
-form.addEventListener('submit', e => {
+document.querySelector('form').addEventListener('submit', e => {
 	rows = Number(document.getElementById('numberBoxes').value);
-	//console.log(rows);
+	clearGrid();
 	e.preventDefault();
 	createMyGrid(rows);
 
@@ -44,15 +39,9 @@ document.querySelector("#box-section").addEventListener("mouseover", function( e
   event.target.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
   event.stopPropagation();
 
- 
-  /*reset the color after a short delay
-  setTimeout(function() {
-    event.target.style.background = "";
-  }, 8000);
-}, false);*/
 });
 
-resetbtn.addEventListener('click', clearGrid);
+document.getElementById('reset').addEventListener('click', clearGrid);
 
 
 

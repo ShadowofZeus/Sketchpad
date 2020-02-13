@@ -12,7 +12,7 @@
   margin: 30px;
   width: 560px;
   height: 560px;
-  background: pink;
+  background: lime;
   display:grid;
 
   
@@ -20,11 +20,12 @@
 
 .littleOnes{
   background: lime;
-  border: 1px solid black;
-  /*grid-template-columns: (16,1fr);
+  /*border: 1px solid black;
+  grid-template-columns: (16,1fr);
   grid-template-columns: auto;
   grid-auto-columns: minmax(10px,auto);
   grid-template-rows: repeat(3,1fr);*/
+
 }
 
 .form-section{
