@@ -4,8 +4,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('./img/shebang.jpeg');
+	
+}
+
+body{
+	background-image: url('./img/bridge.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #box-section{
