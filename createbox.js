@@ -24,11 +24,19 @@ function clearGrid()
 
 document.querySelector('form').addEventListener('submit', e => {
 	rows = Number(document.getElementById('numberBoxes').value);
-	clearGrid();
-	e.preventDefault();
-	createMyGrid(rows);
 
-	});
+	if(rows>64)
+	{
+		alert('Thats too big a value, browser will crash!! Try a lower value.')
+	}
+	else
+	{
+		clearGrid();
+		e.preventDefault();
+		createMyGrid(rows);
+	}
+
+});
 
 document.querySelector("#box-section").addEventListener("mouseover", function( event ) { 
   const r = Math.floor(Math.random() * 256);
