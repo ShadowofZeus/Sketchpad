@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Create Divs with JS</title>
+	<title>Grid Game</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1 class="content"><a href="">Welcome to Get a Square Grid Game!</a></h1>
-	
-	<div class="wrapper">
-		<div class="form-section">
-			<form class="my-form">
-				<input type="text" id="numberBoxes" placeholder="Enter no. of grid rows">
-	    		<input type="submit" id="submitBtn" value="Submit">
-	    		<button id="reset">Clear Grid</button>
-    		</form>
-		</div>
+	<header class="v-header container">
 
-		<div id="box-section">	
+		<div class="fullscreen-video-wrap">
+			<video src="./img/Dolphin.webm" autoplay="true" loop="true"></video>
 		</div>
-	</div>
-	
+		<div class="header-overlay">
+				<div class="header-content">
+					<h1 class="content"><a href="">Welcome to Get a Square Grid Game!</a></h1>
+				</div>
+
+			   <div class="form-section">
+					<form class="my-form">
+						<input type="text" id="numberBoxes" placeholder="Enter no. of grid rows">
+			    		<input type="submit" id="submitBtn" value="Submit">
+			    		<button id="reset">Clear Grid</button>
+		    		</form>
+				</div>
+
+				<div id="box-section">	
+				</div>
+		</div>
+		
+	</header>
 	<script src='createbox.js' type="text/javascript"></script>
 </body>
 </html>
