@@ -9,9 +9,6 @@ body{
 	line-height: 1.5;
 	color: #333;
 	overflow-x: hidden;
-	/*background-image: url('./img/bridge.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;*/
 }
 
 #box-section{
@@ -144,7 +141,7 @@ a:hover {
   text-decoration: none;
 }
 
-@media(max-width: 960px){
+@media(max-width: 767px){
 	.container{
 		padding-right: 3rem;
 		padding-left: 3rem;
